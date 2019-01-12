@@ -14,6 +14,5 @@ module.exports = withPlugins(
                 optimizeImagesInDev: true
             }
         ]
-    ],
-    nextConfig
+    ]
 );
