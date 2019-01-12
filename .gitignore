@@ -1,0 +1,5 @@
+node_modules
+
+# Next.js builded files
+bume.io/Home/.next/
+bume.io/Home/out/
