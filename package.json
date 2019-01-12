@@ -7,7 +7,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/next-source-maps": "^0.0.3",
+    "eslint": "^5.12.0",
+    "eslint-config-xo": "^0.25.1",
     "next": "latest",
+    "next-optimized-images": "^2.3.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
