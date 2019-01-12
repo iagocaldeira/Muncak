@@ -1,4 +1,9 @@
-import Link from 'next/link'
+import Hero from "../layouts/Hero/Hero";
+import Header from "../layouts/Header/Header";
+
 export default () => (
-  <div></div>
+  <div>
+    <Header/>
+    <Hero/>
+  </div>
 )
