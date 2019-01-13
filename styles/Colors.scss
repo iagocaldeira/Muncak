@@ -3,6 +3,7 @@ $muncak-white: #ffffff;
 $muncak-blue: #2870DB;
 $muncak-dark-blue: #1955a3;
 $muncak-darken-blue: #1C2056;
+$muncak-dark-purple: #2d2058;
 $muncak-blue-gray: #263238;
 
 /* shapes */
@@ -11,8 +12,12 @@ $muncak-shapes-blue: $muncak-darken-blue;
 /* layout components */
 $muncak-logo-initial: $muncak-blue;
 $muncak-logo-text: $muncak-darken-blue;
+
 $muncak-header-login-background: $muncak-white;
 $muncak-header-login-text: $muncak-darken-blue;
+
+$muncak-hero-title: $muncak-darken-blue;
+$muncak-hero-subtitle: $muncak-dark-purple;
 
 /* generic components */
 $muncak-primary-button: $muncak-blue;

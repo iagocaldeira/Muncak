@@ -15,7 +15,12 @@ export default () => (
                 <a href="#">About</a>
             </div>
             <div className="header--menu--item">
-                <a className="header--menu--item--login" href="#">Login</a>
+                <a
+                    className="header--menu--item--login"
+                    href="#"
+                >
+                    Login
+                </a>
             </div>
         </nav>
     </div >

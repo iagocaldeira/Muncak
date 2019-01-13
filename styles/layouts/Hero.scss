@@ -1,0 +1,48 @@
+.hero {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 40px 0 0 375px;
+    text-align: left;
+    width: 410px;
+
+    &::after {
+        background: url("../static/hero_shape.svg") no-repeat left;
+        bottom: -760px;
+        content: "";
+        left: -190px;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    .hero--title {
+        color: $muncak-hero-title;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+    .hero--subtitle {
+        color: $muncak-hero-subtitle;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 40px;
+        opacity: 0.65;
+    }
+    .hero--callToAction {
+        background-color: $muncak-primary-button;
+        border-radius: 40px;
+        box-shadow: 0 22px 24px 1px rgba(17, 83, 165, 0.21);
+        color: $muncak-white;
+        font-size: 20px;
+        font-weight: 600;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        text-decoration: none;
+        width: 240px;
+    }
+}
