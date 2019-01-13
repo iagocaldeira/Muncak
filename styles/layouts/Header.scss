@@ -1,0 +1,62 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    text-align: left;
+    padding: 85px 260px;
+
+    &::after {
+        background: url("../static/hero_illustration.webp") no-repeat top right;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        bottom: -9px;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .header--logo {
+        color: $muncak-logo-text;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 49px;
+        .header--logo--initial {
+            color: $muncak-logo-initial;
+        }
+    }
+
+    .header--menu {
+        display: grid;
+        font-size: 18px;
+        font-weight: 400;
+        grid-auto-rows: auto;
+        grid-gap: 1em;
+        grid-template-columns: repeat(4, 1fr);
+        line-height: 36px;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: $muncak-white;
+        }
+        .header--menu--item--login {
+            font-weight: 600;
+            padding: 6px 37px;
+            border-radius: 13px;
+            border: none;
+            background-color: $muncak-header-login-background;
+            color: $muncak-header-login-text;
+            transition: all 0.3s;
+            &:focus,
+            &:hover {
+                opacity: 0.8;
+            }
+            &:active {
+                opacity: 1;
+                color: $muncak-blue;
+            }
+        }
+    }
+}
