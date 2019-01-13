@@ -1,0 +1,37 @@
+.news {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 110px 1fr;
+    margin: 120px 380px;
+
+    .news--title {
+        font-size: 36px;
+        font-weight: bold;
+        grid-column-end: 4;
+        grid-column-start: 1;
+        text-align: center;
+    }
+
+    .news--card {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows: 222px repeat(3, 1fr);
+
+        .news--card--title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .news--card--text {
+            font-size: 18px;
+        }
+
+        .news--card--readMore {
+            font-size: 18px;
+            font-weight: 600;
+            color: $muncak-link-color;
+        }
+    }
+}
