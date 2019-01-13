@@ -1,0 +1,16 @@
+@import "Sanitize.scss";
+@import "Breakpoints.scss";
+@import "Fonts.scss";
+@import "Colors.scss";
+
+@import "layouts/Counters.scss";
+@import "layouts/Features.scss";
+@import "layouts/Footer.scss";
+@import "layouts/Form.scss";
+@import "layouts/Header.scss";
+@import "layouts/Hero.scss";
+@import "layouts/News.scss";
+
+body {
+    font-family: "Open Sans", sans-serif;
+}

@@ -1,0 +1,31 @@
+$OpenSansPath: "../static/fonts/OpenSans";
+
+/* BEGIN Regular */
+@font-face {
+    font-family: "Open Sans";
+    src: url($OpenSansPath+"/OpenSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* END Regular */
+
+/* BEGIN Semibold */
+@font-face {
+    font-family: "Open Sans";
+    src: url($OpenSansPath+"/OpenSans-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* END Semibold */
+
+/* BEGIN Bold */
+@font-face {
+    font-family: "Open Sans";
+    src: url($OpenSansPath+"/OpenSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* END Bold */
