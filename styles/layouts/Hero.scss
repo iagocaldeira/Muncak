@@ -13,6 +13,9 @@
         right: 0;
         top: 0;
         z-index: -1;
+        @include mq("desktop-wide","max"){
+            display: none;
+        }
     }
 
     .hero--wrapper {
@@ -23,7 +26,7 @@
         float: right;
         position: absolute;
         width: 410px;
-        right: calc(50% + 30px);
+        right: calc(50% + 50px);
     }
 
     .hero--title {

@@ -4,8 +4,11 @@
     grid-gap: 1em;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 110px 1fr;
-    margin: 120px auto;
+    margin: 120px auto 0 auto;
     max-width: 1400px;
+    @include mq("desktop", "max") {
+        max-width: 1024px;
+    }
 
     .news--title {
         font-size: 36px;
@@ -21,6 +24,13 @@
         grid-template-rows: 222px repeat(3, 1fr);
         justify-self: center;
         max-width: 350px;
+        @include mq("desktop", "max") {
+            max-width: 320px;
+        }
+
+        .news--card--image {
+            width: 100%;
+        }
 
         .news--card--title {
             font-size: 24px;

@@ -8,7 +8,10 @@
         grid-template-columns: repeat(5, 1fr);
         padding: 0 250px;
         position: relative;
-        
+        @include mq("desktop", "max") {
+            padding: 0 100px;
+        }
+
         &::after {
             background: url("../static/images/globe.svg") top center no-repeat;
             bottom: -150px;
@@ -20,19 +23,19 @@
             width: 100%;
             z-index: -1;
         }
-        
+
         .footer--nav--collumn {
             display: grid;
             grid-auto-rows: auto;
             grid-gap: 25px;
-            
+
             br {
                 content: " ";
                 display: block;
                 margin: 10px 0px;
             }
-            
-            a{
+
+            a {
                 color: $muncak-footer-text;
                 text-decoration: none;
             }
@@ -51,5 +54,8 @@
         grid-template-columns: repeat(3, 60px);
         font-size: 16px;
         padding: 50px 250px;
+        @include mq("desktop", "max") {
+            padding: 50px 100px;
+        }
     }
 }
