@@ -1,44 +1,31 @@
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/hello-world)
+# Muncak
 
-# Hello World example
+## Como abrir?
 
-## How to use
+PS: por conta do React, é recomendado abrir a página em um servidor e não somente o arquivo `index.html` para que as dependencias sejam carregadas corretamente.
 
-### Using `create-next-app`
+### Usando um servidor já configurado
 
-Execute [`create-next-app`](https://github.com/segmentio/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
+Copie a pasta `out` para o local do servidor de estáticos e abra o site
 
-```bash
-npx create-next-app --example hello-world hello-world-app
-# or
-yarn create next-app --example hello-world hello-world-app
-```
+### Usando o `serve`
 
-### Download manually
+Baixe o `serve` como dependencia global do NPM
+```npm i -g serve```
+Abra a pasta `out` com seu terminal e execute o comando
+```serve```
+Agora só abrir o link [localhost:5000](http://localhost:5000)
 
-Download the example:
+## Executando em modo `dev`
 
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/hello-world
-cd hello-world
-```
+### yarn install
 
-Install it and run:
+Execute o comando `yarn install` para isntalar as dependências do projeto.
 
-```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
-```
+### Executando
 
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
+Para rodar em modo dev basta executar no terminal `yarn dev` que o projeto sera buildado e iniciado.
 
-```bash
-now
-```
+### Exportando
 
-## The idea behind the example
-
-This example shows the most basic idea behind Next. We have 2 pages: `pages/index.js` and `pages/about.js`. The former responds to `/` requests and the latter to `/about`. Using `next/link` you can add hyperlinks between them with universal routing capabilities. The `day` directory shows that you can have subdirectories.
+Para exportar o projeto para um servidor estático utilize `yarn export`, após alguns segundos o projeto final estará na pasta `out` pronto para um servidor estático.
