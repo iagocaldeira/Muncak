@@ -3,6 +3,7 @@ $OpenSansPath: "../static/fonts/OpenSans";
 /* BEGIN Regular */
 @font-face {
     font-family: "Open Sans";
+    font-display: auto;
     src: url($OpenSansPath+"/OpenSans-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -13,6 +14,7 @@ $OpenSansPath: "../static/fonts/OpenSans";
 /* BEGIN Semibold */
 @font-face {
     font-family: "Open Sans";
+    font-display: auto;
     src: url($OpenSansPath+"/OpenSans-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
@@ -23,6 +25,7 @@ $OpenSansPath: "../static/fonts/OpenSans";
 /* BEGIN Bold */
 @font-face {
     font-family: "Open Sans";
+    font-display: auto;
     src: url($OpenSansPath+"/OpenSans-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
