@@ -14,6 +14,34 @@
         grid-gap: 155px;
     }
 
+    &::after {
+        background-image: url("../static/images/feature_shape.svg");
+        background-position: left bottom;
+        width: 100px;
+        height: 1700px;
+        content: "";
+        left: calc(100% - 100px);
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        top: 500px;
+        z-index: -1;
+        @include mq("desktop-wide", "max") {
+            height: 1400px;
+            width: 130px;
+            left: calc(100% - 130px);
+        }
+        @include mq("desktop", "max") {
+            width: 100px;
+            left: calc(100% - 100px);
+        }
+        @include mq("tablet", "max") {
+            height: 1550px;
+            width: 100px;
+            left: calc(100% - 100px);
+        }
+    }
+
     .features--title {
         font-size: 36px;
         font-weight: bold;
