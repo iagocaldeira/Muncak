@@ -89,6 +89,7 @@
     }
 
     .features--card {
+        background-color: $muncak-white;
         border-radius: 20px;
         box-shadow: 0 27px 43px rgba(32, 94, 171, 0.1);
         font-size: 18px;
@@ -111,5 +112,23 @@
         @include mq("phone", "max") {
             grid-area: initial !important;
         }
+    }
+
+    #features--bubbles--right {
+        @include bubble(120px, #52c8f9);
+        width: 60px;
+        border-radius: 120px 0 0 120px;
+        bottom: -700px;
+        right: 0px;
+        @include mq("tablet", "max") {
+            display: none;
+        }
+
+    }
+    #features--bubbles--center {
+        @include bubble(80px, #f59399);
+        top: 250px;
+        left: calc(100% - 40px);
+        z-index: -10;
     }
 }

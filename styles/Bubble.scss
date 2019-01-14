@@ -1,0 +1,8 @@
+@mixin bubble($size, $color) {
+    width: $size;
+    height: $size;
+    border-radius: $size;
+    background-color: $color;
+    opacity: 0.5;
+    position: absolute;
+}

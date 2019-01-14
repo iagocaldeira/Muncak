@@ -2,9 +2,8 @@ import Document, { Head, Main, NextScript } from "next/document";
 export default class MyDocument extends Document {
     render() {
         return (
-            <html lang="pt-br">
+            <html lang="en">
                 <Head>
-                    <meta charset="utf-8" />
                     <meta name="author" content="Muncak" />
                     <meta name="description" content="Muncak" />
                     <meta name="msapplication-TileColor" content="#2870DB" />

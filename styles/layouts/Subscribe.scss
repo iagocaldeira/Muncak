@@ -60,4 +60,12 @@
             width: 240px;
         }
     }
+    #subscribe--bubbles--right {
+        @include bubble(140px, #f59399);
+        top: 400px;
+        right: -100px;
+        @include custom_mq(1620px, "max") {
+            display: none;
+        }
+    }
 }

@@ -1,5 +1,6 @@
 @import "Sanitize.scss";
 @import "Breakpoints.scss";
+@import "Bubble.scss";
 @import "Fonts.scss";
 @import "Colors.scss";
 
@@ -14,4 +15,5 @@
 body {
     color: $muncak-text-color;
     font-family: "Open Sans", sans-serif;
+    overflow-x:hidden;
 }

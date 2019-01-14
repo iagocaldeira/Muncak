@@ -7,7 +7,8 @@ export default () => (
             className="features--card"
             id="features--advocate"
         >
-            <img 
+            <img
+                alt="Horn loudspeaker image about advocate section"
                 className="features--card--image"
                 src={"../../static/images/advocate.svg"}
             />
@@ -15,12 +16,14 @@ export default () => (
             We work with Congress, Federal agencies, and partners on policy
             issues and legislation to ensure funding for trails, preservation of
             natural areas, and protection of the hiking experience.
+            <div id="features--bubbles--center"></div>
         </div>
         <div
             className="features--card"
             id="features--volunteer"
         >
-            <img 
+            <img
+                alt="Hand with a heart drawn about volunteers section"
                 className="features--card--image"
                 src={"../../static/images/volunteer.svg"}
             />
@@ -33,7 +36,8 @@ export default () => (
             className="features--card"
             id="features--explore"
         >
-            <img 
+            <img
+                alt="Mountain with a magnifying glass dran about explore section"
                 className="features--card--image"
                 src={"../../static/images/explore.svg"}
             />
@@ -43,5 +47,6 @@ export default () => (
             gear checklists, finding the best trail for you.
         </div>
         <a className="features--learnMore">Learn More</a>
+        <div id="features--bubbles--right"></div>
     </div>
 );

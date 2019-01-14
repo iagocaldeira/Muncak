@@ -18,5 +18,6 @@ export default () => (
             <div className="counters--card--numbers">$108 Million</div>
             in Volunteer Labor.
         </div>
+        <div id="counter--bubbles--left"></div>
     </div>
 );

@@ -12,6 +12,9 @@ export default () => (
             >
                 Get Started
             </a>
+            <div id="hero--bubbles--left"></div>
+            <div id="hero--bubbles--center"></div>
+            <div id="hero--bubbles--right"></div>
         </div>
     </div>
 );

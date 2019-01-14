@@ -38,6 +38,7 @@ class Header extends React.Component {
                         />
                     </div>
                     <img
+                        alt="A boy with a girl on top of a mountain celebrating"
                         className="header--menu--background"
                         src={"../../static/images/hero_illustration.webp"}
                     />

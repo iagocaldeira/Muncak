@@ -51,6 +51,7 @@ export default () => (
             <div>
                 <a href="#">
                     <img
+                        alt="Instagram logo in blue"
                         src={"../../static/images/instagram.svg"}
                         aria-label="Instagram"
                     />
@@ -59,6 +60,7 @@ export default () => (
             <div>
                 <a href="#">
                     <img
+                        alt="Facebook logo in blue"
                         src={"../../static/images/facebook.svg"}
                         aria-label="Facebook"
                     />
@@ -67,6 +69,7 @@ export default () => (
             <div>
                 <a href="#">
                     <img
+                        alt="Twitter logo in blue"
                         src={"../../static/images/twitter.svg"}
                         aria-label="Twitter"
                     />

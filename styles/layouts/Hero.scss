@@ -28,7 +28,9 @@
         width: 410px;
         @include mq("tablet", "max") {
             color: $muncak-white;
-            right: calc(30% + 50px);
+            left: 5%;
+            width: 94%;
+            max-width: 410px;
         }
         @include mq("phone", "max") {
             float: none;
@@ -48,6 +50,7 @@
             text-shadow: 2px 2px 20px #000000;
         }
     }
+
     .hero--subtitle {
         color: $muncak-hero-subtitle;
         font-size: 18px;
@@ -58,6 +61,7 @@
             text-shadow: 2px 2px 20px #000000;
         }
     }
+
     .hero--callToAction {
         background-color: $muncak-primary-button;
         border-radius: 40px;
@@ -70,5 +74,24 @@
         text-align: center;
         text-decoration: none;
         width: 240px;
+    }
+
+    #hero--bubbles--left {
+        @include bubble(140px, #f59399);
+        top: 100px;
+        left: -500px;
+        z-index: -100;
+    }
+
+    #hero--bubbles--center {
+        @include bubble(104px, #52c8f9);
+        top: 300px;
+        left: 400px;
+    }
+
+    #hero--bubbles--right {
+        @include bubble(140px, #f59399);
+        top: 400px;
+        left: 1000px;
     }
 }

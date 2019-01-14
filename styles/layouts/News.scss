@@ -45,6 +45,7 @@
         background-color: white;
         padding-bottom: 50px;
         border-radius: 20px;
+        position: relative;
         @include mq("desktop", "max") {
             max-width: 320px;
         }
@@ -76,5 +77,11 @@
             font-weight: 600;
             padding: 0 20px;
         }
+    }
+
+    #news--bubbles--right {
+        @include bubble(100px, #52c8f9);
+        top: 90%;
+        right:-50px;
     }
 }
