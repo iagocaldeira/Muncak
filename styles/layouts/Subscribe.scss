@@ -1,0 +1,49 @@
+.subscribe {
+    background: url("../static/images/form.svg") center no-repeat;
+    color: $muncak-subscribe-text;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-rows: 200px 1fr;
+    grid-gap: 1em;
+    height: 760px;
+    margin: 120px auto;
+    position: relative;
+    text-align: center;
+    max-width: 1400px;
+
+    .subscribe--title {
+        font-size: 36px;
+        font-weight: normal;
+        margin-top: 85px;
+    }
+
+    .subscribe--form {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows: 1fr 1fr 2fr;
+        justify-items: center;
+        padding: 30px 150px;
+
+        .subscribe--form--input {
+            border-radius: 20px;
+            font-size: 24px;
+            height: 70px;
+            padding: 25px;
+            width: 80%;
+        }
+
+        .subscribe--form--submit {
+            background-color: $muncak-subscribe-submit;
+            border-radius: 40px;
+            box-shadow: 0 22px 24px 1px rgba(17, 83, 165, 0.21);
+            color: $muncak-white;
+            font-size: 20px;
+            font-weight: 600;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            text-decoration: none;
+            width: 240px;
+        }
+    }
+}

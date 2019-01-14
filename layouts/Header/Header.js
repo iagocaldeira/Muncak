@@ -5,6 +5,10 @@ export default () => (
             uncak
         </div>
         <nav className="header--menu">
+            <img
+                className="header--menu--background"
+                src={"../../static/images/hero_illustration.webp"}
+            />
             <div className="header--menu--item">
                 <a href="#">Home</a>
             </div>

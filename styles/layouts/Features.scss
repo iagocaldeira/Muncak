@@ -6,7 +6,8 @@
     grid-gap: 1em;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    padding: 300px 440px 0 440px;
+    margin: 100px auto 0px auto;
+    max-width: 1400px;
     text-align: left;
 
     .features--title {
@@ -50,6 +51,7 @@
 
     .features--card {
         border-radius: 20px;
+        justify-self: center;
         box-shadow: 0 27px 43px rgba(32, 94, 171, 0.1);
         font-size: 18px;
         padding: 70px 50px;

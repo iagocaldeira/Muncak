@@ -3,20 +3,9 @@
     grid-auto-rows: auto;
     grid-gap: 1em;
     grid-template-columns: repeat(2, 1fr);
-    padding: 85px 260px;
+    margin: 85px auto;
+    padding: 0 30px;
     text-align: left;
-
-    &::after {
-        background: url("../static/images/hero_illustration.webp") no-repeat top right;
-        bottom: -500px;
-        content: "";
-        left: 0;
-        margin: 0 auto;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: -1;
-    }
 
     .header--logo {
         color: $muncak-logo-text;
@@ -37,25 +26,50 @@
         grid-template-columns: repeat(4, 1fr);
         line-height: 36px;
         text-align: center;
+
+        .header--menu--background {
+            // background-image: url("../static/images/hero_illustration.webp");
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            // background-position: top right;
+            width: 500px;
+            bottom: -500px;
+            content: "";
+            margin: 0 auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+            width: 55%;
+            max-width: 1000px;
+        }
+
         a {
             color: $muncak-white;
             text-decoration: none;
         }
-        .header--menu--item--login {
-            background-color: $muncak-header-login-background;
-            border-radius: 13px;
-            border: none;
-            color: $muncak-header-login-text;
-            font-weight: 600;
-            padding: 6px 37px;
-            transition: all 0.3s;
-            &:focus,
-            &:hover {
-                opacity: 0.8;
-            }
-            &:active {
-                color: $muncak-blue;
-                opacity: 1;
+
+        .header--menu--item {
+            min-width: 100px;
+
+            .header--menu--item--login {
+                background-color: $muncak-header-login-background;
+                border-radius: 13px;
+                border: none;
+                color: $muncak-header-login-text;
+                font-weight: 600;
+                padding: 6px 27px;
+                transition: all 0.3s;
+
+                &:focus,
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                &:active {
+                    color: $muncak-blue;
+                    opacity: 1;
+                }
             }
         }
     }
