@@ -29,6 +29,7 @@ class Header extends React.Component {
                         <label
                             htmlFor="header--menu--hamburger--toggle"
                             id="header--menu--hamburger--label"
+                            aria-label="mobile hamburger menu"
                         >
                             &#9776;
                         </label>

@@ -13,7 +13,9 @@ export default () => (
                 collectively improve 2,802 miles of trail—the distance across the
                 world—during International Trails Day. Muncak invites hikers, cyclists,…
             </div>
-            <div className="news--card--readMore">Read More</div>
+            <div className="news--card--readMore">
+            <a href="#">Read More</a>
+            </div>
         </div>
         <div className="news--card">
             <img 
@@ -27,7 +29,9 @@ export default () => (
                 It’s even possible to participate on a bicycle. And if you go on a bike
                 overnight trip during International Trails Dayyou will simultaneously…
             </div>
-            <div className="news--card--readMore">Read More</div>
+            <div className="news--card--readMore">
+            <a href="#">Read More</a>
+            </div>
         </div>
         <div className="news--card">
             <img 
@@ -42,7 +46,9 @@ export default () => (
                 and I am wearing layers, but it won’t be long until they are peeled away
                 to adapt to the summer…
             </div>
-            <div className="news--card--readMore">Read More</div>
+            <div className="news--card--readMore">
+            <a href="#">Read More</a>
+            </div>
             <div id="news--bubbles--right"></div>
         </div>
     </div>

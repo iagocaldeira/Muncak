@@ -54,6 +54,9 @@
             a {
                 color: $muncak-footer-text;
                 text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
             }
 
             .footer--nav--collumn--title {

@@ -16,12 +16,19 @@ class Index extends React.Component {
                 <Head>
                     <title>Muncak</title>
                 </Head>
-                <Header />
-                <Hero />
-                <Features />
-                <Counters />
-                <News />
-                <Subscribe />
+                <header role="banner">
+                    <Header />
+                    <nav role="navigation">
+
+                    </nav>
+                    <Hero />
+                </header>
+                <main role="main">
+                    <Features />
+                    <Counters />
+                    <News />
+                    <Subscribe />
+                </main>
                 <Footer />
             </div>
 

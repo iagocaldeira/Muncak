@@ -1,7 +1,10 @@
 export default () => (
     <footer className="footer">
         <nav className="footer--nav">
-            <div className="footer--nav--collumn">
+            <footer
+                className="footer--nav--collumn"
+                role="contentinfo"
+            >
                 <div className="footer--nav--collumn--title">Contact us</div>
                 <div>
                     Muncak hiking society
@@ -17,7 +20,7 @@ export default () => (
                     <br />
                     1-800-972-8608 (Toll-free)
                 </div>
-            </div>
+            </footer>
             <div className="footer--nav--collumn">
                 <div className="footer--nav--collumn--title">About us</div>
                 <div><a href="#">Our Mission</a></div>
