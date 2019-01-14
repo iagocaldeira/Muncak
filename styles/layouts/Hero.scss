@@ -1,5 +1,4 @@
 .hero {
-    // margin: 40px 0 0 375px;
     text-align: left;
     height: 500px;
 
@@ -13,20 +12,30 @@
         right: 0;
         top: 0;
         z-index: -1;
-        @include mq("desktop-wide","max"){
+        @include mq("desktop-wide", "max") {
             display: none;
         }
     }
 
     .hero--wrapper {
         display: grid;
+        float: right;
         grid-auto-rows: auto;
         grid-gap: 1em;
         grid-template-rows: repeat(3, 1fr);
-        float: right;
         position: absolute;
-        width: 410px;
         right: calc(50% + 50px);
+        width: 410px;
+        @include mq("tablet", "max") {
+            color: $muncak-white;
+            right: calc(30% + 50px);
+        }
+        @include mq("phone", "max") {
+            float: none;
+            padding: 0 20px;
+            position: relative;
+            right: 0;
+        }
     }
 
     .hero--title {
@@ -34,13 +43,20 @@
         font-size: 50px;
         font-weight: 700;
         line-height: 60px;
+        @include mq("tablet", "max") {
+            color: $muncak-white;
+            text-shadow: 2px 2px 20px #000000;
+        }
     }
     .hero--subtitle {
         color: $muncak-hero-subtitle;
         font-size: 18px;
         font-weight: 400;
         line-height: 40px;
-        opacity: 0.65;
+        @include mq("tablet", "max") {
+            color: $muncak-white;
+            text-shadow: 2px 2px 20px #000000;
+        }
     }
     .hero--callToAction {
         background-color: $muncak-primary-button;

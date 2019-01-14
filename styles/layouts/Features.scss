@@ -9,6 +9,10 @@
     margin: 100px auto 0px auto;
     max-width: 1400px;
     text-align: left;
+    @include mq("phone", "max") {
+        grid-template-columns: none;
+        grid-gap: 155px;
+    }
 
     .features--title {
         font-size: 36px;
@@ -18,6 +22,10 @@
         justify-self: center;
         text-align: center;
         width: 700px;
+        @include mq("phone", "max") {
+            grid-column: auto;
+            width: auto;
+        }
     }
 
     #features--advocate {
@@ -47,18 +55,33 @@
         text-align: center;
         text-decoration: none;
         width: 240px;
+        @include mq("phone", "max") {
+            grid-area: initial !important;
+        }
     }
 
     .features--card {
         border-radius: 20px;
-        justify-self: center;
         box-shadow: 0 27px 43px rgba(32, 94, 171, 0.1);
         font-size: 18px;
-        padding: 70px 50px;
+        justify-self: center;
         max-width: 550px;
+        padding: 70px 50px;
+        position: relative;
+
+        .features--card--image {
+            position: absolute;
+            bottom: 90%;
+            left: calc(50% - 75px);
+        }
+
         .features--card--title {
             font-size: 24px;
             font-weight: bold;
+        }
+
+        @include mq("phone", "max") {
+            grid-area: initial !important;
         }
     }
 }

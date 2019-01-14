@@ -7,6 +7,10 @@ export default () => (
             className="features--card"
             id="features--advocate"
         >
+            <img 
+                className="features--card--image"
+                src={"../../static/images/advocate.svg"}
+            />
             <h3 className="features--card--title">Advocate</h3>
             We work with Congress, Federal agencies, and partners on policy
             issues and legislation to ensure funding for trails, preservation of
@@ -16,6 +20,10 @@ export default () => (
             className="features--card"
             id="features--volunteer"
         >
+            <img 
+                className="features--card--image"
+                src={"../../static/images/volunteer.svg"}
+            />
             <h3 className="features--card--title">Volunteer</h3>
             Trails don't maintain themselves. Individuals of any age and
             experience level can become trail stewards. Give back to the trails you
@@ -25,6 +33,10 @@ export default () => (
             className="features--card"
             id="features--explore"
         >
+            <img 
+                className="features--card--image"
+                src={"../../static/images/explore.svg"}
+            />
             <h3 className="features--card--title">Explore</h3>
             Feel confident when you set out on your next trail adventure.
             Check out our free hiking resources like tips for hiking with families,

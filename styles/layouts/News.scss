@@ -6,8 +6,10 @@
     grid-template-rows: 110px 1fr;
     margin: 120px auto 0 auto;
     max-width: 1400px;
-    @include mq("desktop", "max") {
-        max-width: 1024px;
+    @include mq("phone", "max") {
+        grid-gap: 2em;
+        grid-template-columns: none;
+        grid-template-rows: 170px 1fr;
     }
 
     .news--title {
@@ -16,16 +18,24 @@
         grid-column-end: 4;
         grid-column-start: 1;
         text-align: center;
+        @include mq("phone", "max") {
+            grid-column: auto;
+        }
     }
 
     .news--card {
         display: grid;
         grid-gap: 1em;
-        grid-template-rows: 222px repeat(3, 1fr);
         justify-self: center;
         max-width: 350px;
         @include mq("desktop", "max") {
             max-width: 320px;
+        }
+        @include mq("tablet", "max") {
+            max-width: 180px;
+        }
+        @include mq("phone", "max") {
+            max-width: 300px;
         }
 
         .news--card--image {

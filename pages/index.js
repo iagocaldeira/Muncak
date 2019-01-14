@@ -6,16 +6,28 @@ import Hero from "../layouts/Hero/Hero";
 import News from "../layouts/News/News";
 import Subscribe from "../layouts/Subscribe/Subscribe";
 import Footer from "../layouts/Footer/Footer";
+import Head from "next/head";
 
 
-export default () => (
-    <div>
-        <Header />
-        <Hero />
-        <Features />
-        <Counters/>
-        <News/>
-        <Subscribe/>
-        <Footer/>
-    </div>
-)
+class Index extends React.Component {
+    render() {
+        return (
+            <div>
+                <Head>
+                    <title>Muncak</title>
+                </Head>
+                <Header />
+                <Hero />
+                <Features />
+                <Counters />
+                <News />
+                <Subscribe />
+                <Footer />
+            </div>
+
+        )
+    }
+}
+
+
+export default Index;

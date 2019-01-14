@@ -6,12 +6,17 @@
     margin: 85px auto;
     padding: 0 30px;
     text-align: left;
+    @include mq("tablet", "max") {
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 -40px 170px 150px rgba(255, 255, 255, 0.3);
+    }
 
     .header--logo {
         color: $muncak-logo-text;
         font-size: 40px;
         font-weight: 700;
-        line-height: 49px;
+        line-height: 35px;
+        min-width: 160px;
         .header--logo--initial {
             color: $muncak-logo-initial;
         }
@@ -27,21 +32,38 @@
         line-height: 36px;
         text-align: center;
 
+        @include mq("phone", "max") {
+            grid-template-rows: repeat(1, 1fr);
+            &.open {
+                background-color: black;
+                grid-template-columns: none;
+                grid-template-rows: repeat(5, 1fr);
+                height: 100%;
+                left: 0;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 10;
+            }
+        }
+
         .header--menu--background {
-            // background-image: url("../static/images/hero_illustration.webp");
-            // background-repeat: no-repeat;
-            // background-size: contain;
-            // background-position: top right;
-            width: 500px;
-            bottom: -500px;
-            content: "";
-            margin: 0 auto;
+            max-width: 1000px;
             position: absolute;
             right: 0;
             top: 0;
-            z-index: -1;
             width: 55%;
-            max-width: 1000px;
+            z-index: -1;
+            @include mq("tablet", "max") {
+                width: 880px;
+                filter: brightness(80%) contrast(140%);
+            }
+
+            &.open {
+                @include mq("phone", "max") {
+                    display: none;
+                }
+            }
         }
 
         a {
@@ -50,7 +72,12 @@
         }
 
         .header--menu--item {
-            min-width: 100px;
+            min-width: 105px;
+            justify-self: center;
+
+            &:hover {
+                text-shadow: 1px 1px 20px $muncak-white;
+            }
 
             .header--menu--item--login {
                 background-color: $muncak-header-login-background;
@@ -70,6 +97,35 @@
                     color: $muncak-blue;
                     opacity: 1;
                 }
+            }
+
+            @include mq("phone", "max") {
+                display: none;
+            }
+            &.open {
+                display: initial;
+            }
+        }
+
+        .header--menu--hamburger {
+            display: none;
+            @include mq("phone", "max") {
+                display: block !important;
+            }
+
+            #header--menu--hamburger--toggle {
+                display: none;
+            }
+
+            #header--menu--hamburger--label {
+                color: $muncak-white;
+                cursor: pointer;
+                font-size: 35px;
+                padding-top: 5%;
+                user-select: none;
+            }
+            &.open {
+                align-self: center;
             }
         }
     }
